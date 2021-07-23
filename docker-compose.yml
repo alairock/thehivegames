@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  database:
+    image: postgres
+    ports:
+      - "5132:5432"
+    environment:
+      POSTGRES_PASSWORD: password
+  smallprox:
+    image: nhumrich/small-prox
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      DEBUG: "True"  # or False :P
+      LOCAL_PORTS: "site.test=3000,site.test/api=3232"

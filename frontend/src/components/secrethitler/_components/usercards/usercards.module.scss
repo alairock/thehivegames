@@ -1,0 +1,58 @@
+.usercard {
+  background-color: #eedba8;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+.cardcontainer {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.president {
+  border: #6607ff 3px solid;
+}
+
+.youpres {
+  animation: presblink 500ms infinite;
+  color: black;
+  font-weight: bolder;
+}
+
+@keyframes presblink {
+  0% {
+    background-color: rgba(#ffb9b9, 1);
+  }
+  50% {
+    background-color: rgba(#eedba8, 1);
+  }
+  100% {
+    background-color: rgba(#ffb9b9, 1);
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.liberal {
+  background: repeating-linear-gradient(
+    45deg,
+    #d3d3d3,
+    #d3d3d3 30px,
+    #b8b8b8 30px,
+    #b8b8b8 35px
+  );
+}
+
+.fascist {
+  background-attachment: fixed;
+  background-size: 10%;
+  background-image: url("./fascist.svg");
+}
+
+.hitler {
+  background-attachment: fixed;
+  background-size: 10%;
+  background-image: url("./hitler.svg");
+}
